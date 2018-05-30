@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 
-body {
-
+body, html{
+  height: 100%;
 }
 
 .grid {
@@ -23,18 +23,14 @@ body {
 
 .parallax {
   background-image: url("http://stillblog.net/app/uploads/2018/05/young-leaves-4b.jpg");
-  min-height: 160px;
+  min-height: 200px;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.parallax {
-    background-image: url("http://stillblog.net/app/uploads/2018/05/young-leaves-4b.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.work {
+  height:1000px;
 }
