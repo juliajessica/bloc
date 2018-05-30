@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+* {
+  margin: 0;
+}
+
 
 body, html{
   height: 100%;
 }
 
-.grid {
+.bloc {
 
 }
 
@@ -15,8 +19,49 @@ body, html{
   color: #7caeff;
 }
 
-.grid h1 {
+.bloc h1 {
   font-family: 'Playfair Display', serif;
+}
+
+a {
+  outline: none;
+  border: 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+svg {
+  height: 60px;
+  width: auto;
+}
+
+a svg:hover .svg-mail {
+ color: #a0f7e1;
+}
+
+a svg:hover .svg-linkedIn {
+  color: #f7a0f7;
+}
+a svg:hover .svg-blog {
+ color: #e5da85;
+}
+a svg:hover .svg-ig {
+color: #5e91ff;
+}
+a svg:hover .svg-fb {
+  color: #3ed89b;
+}
+
+a svg .svg-mail,
+a svg .svg-mail,
+a svg .svg-blog,
+a svg .svg-ig,
+a svg .svg-fb
+ {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
 }
 
 .grid-item {
@@ -42,7 +87,7 @@ body, html{
 .title-surf {
   font-size: 50px;
   padding: 30px;
-  color: #7caeff;
+  color: #dbd878;
 }
 
 .parallax2 {
@@ -58,7 +103,7 @@ body, html{
 .title-clothing {
   font-size: 50px;
   padding: 30px;
-  color: #7caeff;
+  color: #b173ba;
 }
 
 .parallax3 {
@@ -74,11 +119,11 @@ body, html{
 .title-adventure {
   font-size: 50px;
   padding: 30px;
-  color: #7caeff;
+  color: #78dba1;
 }
 
 .parallax4 {
-  background-image: url("https://cdn.dribbble.com/users/548267/screenshots/2856383/the_road_v2-dribbble.jpg");
+  background-image: url("https://cdn.dribbble.com/users/948894/screenshots/2381305/dribblewalk.gif");
   min-height: 700px;
   height: 100%;
   background-attachment: fixed;
@@ -90,7 +135,7 @@ body, html{
 .title-ceramics {
   font-size: 50px;
   padding: 30px;
-  color: #7caeff;
+  color: #f96645;
 }
 
 .parallax5 {
