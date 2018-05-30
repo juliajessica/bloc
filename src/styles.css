@@ -9,8 +9,10 @@ body, html{
 
 }
 
-.title {
+.logo {
+  font-size: 70px;
   padding: 30px;
+  color: #7caeff;
 }
 
 .grid h1 {
@@ -21,9 +23,15 @@ body, html{
 
 }
 
+.title-surf {
+  font-size: 50px;
+  padding: 30px;
+  color: #7caeff;
+}
+
 .parallax {
-  background-image: url("http://stillblog.net/app/uploads/2018/05/young-leaves-4b.jpg");
-  min-height: 200px;
+  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3505133/sittingonpool_dribble_v02.mp4.gif");
+  min-height: 700px;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -31,6 +39,72 @@ body, html{
   background-size: cover;
 }
 
+.title-surf {
+  font-size: 50px;
+  padding: 30px;
+  color: #7caeff;
+}
+
+.parallax2 {
+  background-image: url("https://cdn.dribbble.com/users/40298/screenshots/3861789/drawing-lines.gif");
+  min-height: 700px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-clothing {
+  font-size: 50px;
+  padding: 30px;
+  color: #7caeff;
+}
+
+.parallax3 {
+  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3313682/hairstyle_01_dribble_v01_1x.png");
+  min-height: 700px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-adventure {
+  font-size: 50px;
+  padding: 30px;
+  color: #7caeff;
+}
+
+.parallax4 {
+  background-image: url("https://cdn.dribbble.com/users/548267/screenshots/2856383/the_road_v2-dribbble.jpg");
+  min-height: 700px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-ceramics {
+  font-size: 50px;
+  padding: 30px;
+  color: #7caeff;
+}
+
+.parallax5 {
+  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3632482/plantinspo-v02-dribble.mp4.gif");
+  min-height: 700px;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 .work {
-  height:1000px;
+  height:300px;
 }
