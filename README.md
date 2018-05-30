@@ -1,31 +1,16 @@
-# JS Template Repo for Epicodus
+# Bloc
 
-## By Bobby Martin
-
-# Description
-This is a template directory to make things go quicker in the morning.
-
-# Specifications
-* The program will hold the necessary files and folders for easy cloning
-  * Input Example: **Example**
-  * Output Example: **Example**
+Bloc is a webpage designed to share creative design inspirations by Julia Sheremet and Jessica Schmitz
 
 # Setup Requirements
 * Clone this repository
 * Run npm install to install all dependencies
 * Run npm run start to build and start the development environment
 
-# Notes
-* To hold all images, **Make a folder called 'images' in the src/ directory**
-* If you want to rename your assets folder, currently known as 'images', **Make sure to change the outputPath and inputPath in webpack.config.js > module > rules > file-loader to your desired assets directory name.**
-
 # Technologies
 * HTML
 * CSS
-* JavaScript
 * Webpack
-* Jasmine
-* Karma
 
 This project uses the _MIT License_
-&copy; **Bobby Martin** 2018
+&copy; **Julia Sheremet & Jessica Schmitz** 2018
