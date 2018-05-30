@@ -2,6 +2,9 @@
 
 Bloc is a webpage designed to share creative design inspirations by Julia Sheremet and Jessica Schmitz
 
+# Color Inspiration
+![Color Screenshot](src/images/color-inspo.png)
+
 # Setup Requirements
 * Clone this repository
 * Run npm install to install all dependencies
