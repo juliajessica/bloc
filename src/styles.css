@@ -4,7 +4,6 @@
   margin: 0;
 }
 
-
 body, html{
   height: 100%;
 }
@@ -148,8 +147,23 @@ a svg .svg-fb
   background-size: cover;
 }
 
+.parallax6 {
+  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3632482/plantinspo-v02-dribble.mp4.gif");
+  min-height: 100px;
+  height: 20%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.details {
+  height:200px;
+}
 
-.work {
-  height:300px;
+.svg-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
 }
