@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+body {
+
+}
+
+.grid {
+
+}
+
+.grid h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.grid-item {
+
+}
+
+.parallax {
+  background-image: url("http://stillblog.net/app/uploads/2018/05/young-leaves-4b.jpg");
+  min-height: 160px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
