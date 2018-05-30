@@ -9,6 +9,10 @@ body {
 
 }
 
+.title {
+  padding: 30px;
+}
+
 .grid h1 {
   font-family: 'Playfair Display', serif;
 }
@@ -24,4 +28,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax {
+    background-image: url("http://stillblog.net/app/uploads/2018/05/young-leaves-4b.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
