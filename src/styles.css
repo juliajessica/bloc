@@ -170,3 +170,40 @@ a svg .svg-fb
   margin: auto;
   max-width: 1000px;
 }
+
+/* grid children styles */
+.name{
+  text-transform: lowercase;
+  font-size: 2rem;
+  padding-right: 10px;
+  letter-spacing: .1rem;
+}
+.address p{
+  font-size: .8rem;
+  padding: 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+.about{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: lighter;
+}
+.cosube, .up-north, .leeward, .back-talk, .mister-sister, .seven-sisters, .next-ad, .outdoor, .wornpath, .mantel, .made-here, .canoe{
+  padding: 15px;
+}
+.surf{
+  background-color: #dbd878;
+}
+.clothing{
+  background-color: #b173ba;
+  /* background-color: #dbd878; */
+}
+.adventure{
+  background-color: #78dba1;
+}
+.ceramics{
+  background-color: #f96645;
+}
