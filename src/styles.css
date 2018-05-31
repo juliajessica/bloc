@@ -9,10 +9,6 @@ body, html{
   height: 100%;
 }
 
-.bloc {
-
-}
-
 .nav-hamburger {
   color: white;
   position: fixed;
@@ -61,7 +57,7 @@ body, html{
 }
 
 .ceramics-nav:hover {
-  color: #f7a0f7;
+  color: #a77ec1;
 }
 
 .sidenav .closebtn {
@@ -81,11 +77,6 @@ body, html{
 .bloc h1 {
   font-family: 'Playfair Display', serif;
 }
-
-.details {
-  height:200px;
-}
-
 a {
   outline: none;
   border: 0;
@@ -100,8 +91,6 @@ a {
   grid-auto-flow: dense;
   margin: auto;
   max-width: 1000px;
-  /* align-items: center; */
-
 }
 
 .parallax {
@@ -239,13 +228,27 @@ a svg .svg-fb
   background-size: cover;
   padding-bottom: 20px;
 }
-
-
 .details {
-  height:200px;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  height: auto;
   background-color: #7caeff;
+  padding: 20px;
+  font-size: 1.2rem;
 }
-
+.details p{
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 25px;
+}
+.details h2{
+  color: #ffddcc;
+  margin-bottom: 15px;
+}
+.details h4{
+  margin-bottom: 15px;
+}
 .footer-links{
   display: flex;
   flex-direction: column;
