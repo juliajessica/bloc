@@ -47,19 +47,19 @@ body, html{
   color: white;
 }
 
-.surf:hover {
+.surf-nav:hover {
   color: #f7684f;
 }
 
-.clothing:hover {
+.clothing-nav:hover {
   color: #e2d68c;
 }
 
-.adventure:hover {
+.adventure-nav:hover {
   color: #3ed89b;
 }
 
-.ceramics:hover {
+.ceramics-nav:hover {
   color: #f7a0f7;
 }
 
