@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body, html{
@@ -99,6 +100,8 @@ a {
   grid-auto-flow: dense;
   margin: auto;
   max-width: 1000px;
+  /* align-items: center; */
+
 }
 
 .parallax {
@@ -287,6 +290,7 @@ a svg .svg-fb
   padding-right: 10px;
   letter-spacing: .1rem;
   color: #fff;
+  transition: all .2s ease-in-out;
 }
 .address p{
   font-size: .8rem;
@@ -308,24 +312,37 @@ a svg .svg-fb
 }
 .surf{
   background-color: #dbd878;
+  height: 561px;
 }
 .clothing{
   background-color: #b173ba;
-  /* background-color: #dbd878; */
+  height: 731px;
 }
 .adventure{
   background-color: #78dba1;
+  height: 580px;
 }
 .ceramics{
   background-color: #f96645;
+  height: 600px;
 }
 img{
-  position: relative;
-  overflow: hidden;
   transition: all .4s ease-in-out;
   width: 293px;
+  height: auto;
+  padding: 10px;
 }
 img:hover{
-  opacity: .8;
-  transform: scale(1.1);
+  width: 293px;
+  height: auto;
+  opacity: .75;
+}
+.hide{
+  display: none;
+}
+.img:hover ~ .hide{
+  display: block;
+}
+.img:hover ~ .name{
+  font-size: smaller;
 }
