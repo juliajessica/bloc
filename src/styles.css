@@ -153,6 +153,7 @@ a svg .svg-fb
 
 .details {
   height:200px;
+  background-color: #7caeff;
 }
 
 .svg-social {
@@ -177,11 +178,13 @@ a svg .svg-fb
   font-size: 2rem;
   padding-right: 10px;
   letter-spacing: .1rem;
+  color: #fff;
 }
 .address p{
   font-size: .8rem;
   padding: 8px;
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 .about{
   font-size: 1.2rem;
@@ -190,6 +193,7 @@ a svg .svg-fb
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .1rem;
   font-weight: lighter;
+  color: #fff;
 }
 .cosube, .up-north, .leeward, .back-talk, .mister-sister, .seven-sisters, .next-ad, .outdoor, .wornpath, .mantel, .made-here, .canoe{
   padding: 15px;
@@ -206,4 +210,14 @@ a svg .svg-fb
 }
 .ceramics{
   background-color: #f96645;
+}
+img{
+  position: relative;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+  width: 293px;
+}
+img:hover{
+  opacity: .8;
+  transform: scale(1.1);
 }
