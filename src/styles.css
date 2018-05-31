@@ -161,3 +161,12 @@ a svg .svg-fb
   justify-content: center;
   padding: 10px;
 }
+/* Grids */
+
+.grid-surf, .grid-clothing, .grid-adventure, .grid-ceramics{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  margin: auto;
+  max-width: 1000px;
+}
