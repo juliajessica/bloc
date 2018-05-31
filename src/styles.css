@@ -12,6 +12,65 @@ body, html{
 
 }
 
+.nav-hamburger {
+  color: white;
+  position: fixed;
+  right: 0;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/*navbar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #eeaa11;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 3.5px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  color: white;
+}
+
+.surf:hover {
+  color: #f7684f;
+}
+
+.clothing:hover {
+  color: #e2d68c;
+}
+
+.adventure:hover {
+  color: #3ed89b;
+}
+
+.ceramics:hover {
+  color: #f7a0f7;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 .logo {
   font-size: 70px;
   padding: 30px;
@@ -22,6 +81,10 @@ body, html{
   font-family: 'Playfair Display', serif;
 }
 
+.details {
+  height:200px;
+}
+
 a {
   outline: none;
   border: 0;
@@ -29,42 +92,13 @@ a {
   color: #ffffff;
 }
 
-svg {
-  height: 60px;
-  width: auto;
-}
-
-a svg:hover .svg-mail {
- color: #a0f7e1;
-}
-
-a svg:hover .svg-linkedIn {
-  color: #f7a0f7;
-}
-a svg:hover .svg-blog {
- color: #e5da85;
-}
-a svg:hover .svg-ig {
-color: #5e91ff;
-}
-a svg:hover .svg-fb {
-  color: #3ed89b;
-}
-
-a svg .svg-mail,
-a svg .svg-mail,
-a svg .svg-blog,
-a svg .svg-ig,
-a svg .svg-fb
- {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
-}
-
-.grid-item {
-
+/* Grids */
+.grid-surf, .grid-clothing, .grid-adventure, .grid-ceramics{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .parallax {
@@ -141,35 +175,109 @@ a svg .svg-fb
   background-size: cover;
 }
 
-.parallax6 {
-  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3632482/plantinspo-v02-dribble.mp4.gif");
-  min-height: 100px;
-  height: 20%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+svg {
+  height: 30px;
+  width: auto;
+  -webkit-transition: height 2s;
+  transition: height .5s;
 }
 
-.details {
-  height:200px;
-  background-color: #7caeff;
+a svg:hover .svg-mail {
+  color: #ffac41;
+  height: 60px;
+}
+
+svg:hover {
+  height: 35px;
+}
+
+a svg:hover .svg-linkedIn {
+  color: #f7a0f7;
+}
+
+a svg:hover .svg-blog {
+ color: #e5da85;
+}
+
+a svg:hover .svg-fb {
+  color: #3ed89b;
+}
+
+a svg:hover .svg-ig {
+color: #a77ec1;
+}
+
+a svg .svg-mail,
+a svg .svg-mail,
+a svg .svg-blog,
+a svg .svg-ig,
+a svg .svg-fb
+ {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
 }
 
 .svg-social {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
-/* Grids */
 
-.grid-surf, .grid-clothing, .grid-adventure, .grid-ceramics{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-flow: dense;
-  margin: auto;
-  max-width: 1000px;
+.footer {
+  background-color: #75aaff;
+  min-height: 170px;
+  height: 20%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+
+.details {
+  height:200px;
+  background-color: #7caeff;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.copyright {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+}
+
+.footer-links p:hover:nth-child(1){
+  color: #ffac41;
+  letter-spacing: 3px;
+}
+
+.footer-links p:hover:nth-child(2){
+  color: #40cf9a;
+  letter-spacing: 3px;
+}
+
+.footer-links p:hover:nth-child(3){
+  color: #e2d68c;
+  letter-spacing: 3px;
+}
+
+.footer-links p:hover:nth-child(4){
+  color: #a77ec1;
+  letter-spacing: 3px;
 }
 
 /* grid children styles */
