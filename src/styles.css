@@ -235,12 +235,12 @@ a svg .svg-fb
   height: auto;
   background-color: #7caeff;
   padding: 20px;
-  font-size: 1.2rem;
 }
 .details p{
   margin-left: 100px;
   margin-right: 100px;
   line-height: 25px;
+  font-size: 1.2rem;
 }
 .details h2{
   color: #ffddcc;
@@ -330,13 +330,14 @@ a svg .svg-fb
   height: 600px;
 }
 img{
-  transition: all .4s ease-in-out;
   width: 293px;
   height: auto;
   padding: 10px;
 }
-img:hover{
-  width: 293px;
+.cosube, .up-north, .leeward, .back-talk, .mister-sister, .seven-sisters, .next-ad, .outdoor, .wornpath, .mantel, .made-here, .canoe{
+  transition: all .4s ease-in-out;
+}
+.cosube:hover, .up-north:hover, .Leeward:hover, .back-talk:hover, .mister-sister:hover, .seven-sisters:hover, .next-ad:hover, .outdoor:hover, .wornpath:hover, .mantel:hover, .made-here:hover, .canoe:hover {
   height: auto;
   opacity: .75;
 }
@@ -348,4 +349,14 @@ img:hover{
 }
 .img:hover ~ .name{
   font-size: smaller;
+}
+/* media queries */
+
+@media (max-width: 450px){
+  .details p{
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+  }
+
 }
