@@ -2,11 +2,18 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body, html{
   height: 100%;
+  width: 100%;
+}
+
+#mobile-nav {
+  display: none;
+  visibility: hidden;
 }
 
 .nav-hamburger {
@@ -77,6 +84,21 @@ body, html{
 .bloc h1 {
   font-family: 'Playfair Display', serif;
 }
+
+.details {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  height:200px;
+  background-color: #7caeff;
+  line-height: 23px;
+  padding: 20px;
+}
+
+.details h2{
+  color:#ffddcc;
+}
+
 a {
   outline: none;
   border: 0;
@@ -91,6 +113,8 @@ a {
   grid-auto-flow: dense;
   margin: auto;
   max-width: 1000px;
+  /* align-items: center; */
+
 }
 
 .parallax {
@@ -126,7 +150,7 @@ a {
 }
 
 .parallax3 {
-  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3313682/hairstyle_01_dribble_v01_1x.png");
+  background-image: url("https://cdn.dribbble.com/users/515528/screenshots/2835415/balance.gif");
   min-height: 700px;
   height: 100%;
   background-attachment: fixed;
@@ -165,6 +189,64 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* grid children styles */
+.name{
+  text-transform: lowercase;
+  font-size: 2rem;
+  padding-right: 10px;
+  letter-spacing: .1rem;
+  color: #fff;
+
+}
+.address p{
+  font-size: .8rem;
+  padding: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.about{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.cosube, .up-north, .leeward, .back-talk, .mister-sister, .seven-sisters, .next-ad, .outdoor, .wornpath, .mantel, .made-here, .canoe{
+  padding: 15px;
+}
+
+.surf{
+  background-color: #dbd878;
+}
+
+.clothing{
+  background-color: #b173ba;
+}
+
+.adventure{
+  background-color: #78dba1;
+}
+
+.ceramics{
+  background-color: #f96645;
+}
+
+img{
+  position: relative;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+  width: 293px;
+}
+
+img:hover{
+  opacity: .8;
+  transform: scale(1.1);
 }
 
 svg {
@@ -228,27 +310,7 @@ a svg .svg-fb
   background-size: cover;
   padding-bottom: 20px;
 }
-.details {
-  padding-top: 20px;
-  text-align: center;
-  color: white;
-  height: auto;
-  background-color: #7caeff;
-  padding: 20px;
-  font-size: 1.2rem;
-}
-.details p{
-  margin-left: 100px;
-  margin-right: 100px;
-  line-height: 25px;
-}
-.details h2{
-  color: #ffddcc;
-  margin-bottom: 15px;
-}
-.details h4{
-  margin-bottom: 15px;
-}
+
 .footer-links{
   display: flex;
   flex-direction: column;
@@ -346,6 +408,29 @@ img:hover{
 .img:hover ~ .hide{
   display: block;
 }
-.img:hover ~ .name{
-  font-size: smaller;
+
+
+@media only screen and (max-width: 450px) {
+  .details {
+    height: 430px;
+  }
+  span.nav-hamburger, .sidenav {
+    display: none;
+  }
+  #mobile-nav {
+    color: black;
+    font-size: 25px;
+    background-color: #dbd877;
+    text-align: center;
+    visibility: visible;
+    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    padding:10px;
+  }
+  .clothing-nav:hover {
+    color: #f7a0f7;
+  }
 }
