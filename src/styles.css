@@ -126,7 +126,7 @@ a {
 }
 
 .parallax3 {
-  background-image: url("https://cdn.dribbble.com/users/131989/screenshots/3313682/hairstyle_01_dribble_v01_1x.png");
+  background-image: url("https://cdn.dribbble.com/users/515528/screenshots/2835415/balance.gif");
   min-height: 700px;
   height: 100%;
   background-attachment: fixed;
@@ -342,7 +342,7 @@ img{
   opacity: .75;
 }
 .hide{
-  display: none;
+  /* display: none; */
 }
 .img:hover ~ .hide{
   display: block;
@@ -358,5 +358,58 @@ img{
     margin-right: 10px;
     line-height: 20px;
   }
+  .surf, .clothing, .adventure, .ceramics{
+    height: auto;
+  }
+  .about{
+    font-size: 1rem;
+  }
+  h1{
+    font-size: 4.5rem;
+  }
+  #main-title{
+    font-size: 6rem;
+  }
+  .hide{
+    display: block;
+  }
+}
 
+@media (max-width: 750px) and (min-width: 451px){
+  .details p{
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 23px;
+  }
+  .surf, .clothing, .adventure, .ceramics{
+    height: auto;
+  }
+  .surf{
+    display: flex;
+    justify-content: center;
+  }
+  .hide{
+    display: block;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 915px){
+  .surf{
+    height: 975px;
+  }
+  .clothing{
+    height: 1365px;
+  }
+  .adventure{
+    height:  1035px;
+  }
+  .ceramics{
+    height: 1020px;
+  }
+}
+@media (min-width: 1350px) {
+  body{
+    max-width: 1250px;
+    margin: auto;
+  }
 }
