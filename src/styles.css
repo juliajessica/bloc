@@ -8,7 +8,8 @@
 
 body, html{
   height: 100%;
-  width: 100%;
+  /* max-width: 1250px;
+  margin: auto; */
 }
 
 #mobile-nav {
@@ -113,8 +114,6 @@ a {
   grid-auto-flow: dense;
   margin: auto;
   max-width: 1000px;
-  /* align-items: center; */
-
 }
 
 .parallax {
@@ -425,10 +424,13 @@ img{
   opacity: .75;
 }
 .hide{
-  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
 }
 .img:hover ~ .hide{
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 /* media queries */
 
@@ -493,6 +495,9 @@ img{
   .hide{
     display: block;
   }
+  .parallax{
+    background-size: contain;
+  }
 }
 
 @media (min-width: 751px) and (max-width: 915px){
@@ -508,10 +513,21 @@ img{
   .ceramics{
     height: 1020px;
   }
+  .parallax{
+    background-size: contain;
+  }
+}
+@media (min-width: 916px) and (max-width: 1349px){
+  .parallax{
+    /* background-size: contain; */
+  }
 }
 @media (min-width: 1350px) {
   body{
     max-width: 1250px;
     margin: auto;
+  }
+  .parallax{
+    background-size: contain;
   }
 }
