@@ -434,6 +434,9 @@ img{
 }
 /* media queries */
 
+/*@media (min-width: 300px){
+
+}*/
 @media (max-width: 450px){
   span.nav-hamburger, .sidenav {
     display: none;
@@ -481,7 +484,23 @@ img{
     display: block;
   }
   .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
-    background-size: cover;
+    background-size: contain;
+  }
+  .logo {
+    padding-bottom: 0;
+  }
+  .parallax {
+    background-size: contain;
+    min-height: 700px;
+    height: 30%;
+  }
+  .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-size: contain;
+    min-height: 200px;
+    height: 50%;
+  }
+  .nav-hamburger{
+    color: #dbd877;
   }
 }
 
@@ -501,8 +520,21 @@ img{
   .hide{
     display: block;
   }
-  .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
-    background-size: cover;
+  .logo {
+    padding-bottom: 0;
+  }
+  .parallax {
+    background-size: contain;
+    min-height: 700px;
+    height: 30%;
+  }
+  .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-size: contain;
+    min-height: 200px;
+    height: 50%;
+  }
+  .nav-hamburger{
+    color: #dbd877;
   }
 }
 
@@ -522,10 +554,16 @@ img{
   .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
     background-size: cover;
   }
+  .nav-hamburger{
+    color: #dbd877;
+  }
 }
 @media (min-width: 916px) and (max-width: 1349px){
   .parallax{
-     background-size: contain;
+     background-size: cover;
+  }
+  .nav-hamburger{
+    color: #dbd877;
   }
 }
 @media (min-width: 1350px) {
@@ -536,4 +574,15 @@ img{
   .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
     background-size: cover;
   }
+  .nav-hamburger {
+    display: block;
+    color: black;
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
 }
