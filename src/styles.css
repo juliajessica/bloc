@@ -477,6 +477,12 @@ img{
   .hide{
     display: block;
   }
+  .hide{
+    display: block;
+  }
+  .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-size: cover;
+  }
 }
 
 @media (max-width: 750px) and (min-width: 451px){
@@ -495,8 +501,8 @@ img{
   .hide{
     display: block;
   }
-  .parallax{
-    background-size: contain;
+  .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-size: cover;
   }
 }
 
@@ -513,13 +519,13 @@ img{
   .ceramics{
     height: 1020px;
   }
-  .parallax{
-    background-size: contain;
+  .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-size: cover;
   }
 }
 @media (min-width: 916px) and (max-width: 1349px){
   .parallax{
-    /* background-size: contain; */
+     background-size: contain;
   }
 }
 @media (min-width: 1350px) {
@@ -527,7 +533,7 @@ img{
     max-width: 1250px;
     margin: auto;
   }
-  .parallax{
-    background-size: contain;
+  .parallax, .parallax2, .parallax3, .parallax4, .parallax5 {
+    background-size: cover;
   }
 }
